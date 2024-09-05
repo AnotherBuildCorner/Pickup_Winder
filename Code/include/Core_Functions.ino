@@ -141,9 +141,9 @@ Gateflag = 0;
 
 void SpeedControl(){
   PotVal = analogRead(PotPin);
-if(spin_dir == 1 && Go == true){
-  Speed = map(PotVal,Potmin,Potmax,Stop,CWMaxSpeed);}
 if(spin_dir == -1 && Go == true){
+  Speed = map(PotVal,Potmin,Potmax,Stop,CWMaxSpeed);}
+if(spin_dir == 1 && Go == true){
   Speed = map(PotVal,Potmin,Potmax,Stop,CCWMaxSpeed);}  
 if(Go == false){
     Speed = Stop;
@@ -303,3 +303,4 @@ switch(cases){
 }
 return status;
 }
+

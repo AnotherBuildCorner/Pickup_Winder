@@ -47,8 +47,9 @@ void RunScreen(int go, int revs, int time, int sw){
 
             display.setTextSize(1);
             display.print("Target: "); // Print text
+            display.setTextSize(2);
             display.println(winds); // Print text
-            display.println("-----------------");
+            //display.println("-----------------");
             display.setTextSize(2);
             display.println("Count: "); // Print text
             display.println(revs); // Print text

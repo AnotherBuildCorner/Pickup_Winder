@@ -1,16 +1,16 @@
 // ----------------------- Servo Parameters----------------------
-int wind_count = 200;
+int wind_count = 8750;
 float arm_length = 13;//arm length from servo center in mm.  19 standard
-int underwind = 5; //% underwind  set overwind to 0
+int underwind = 0; //% underwind  set overwind to 0
 int overwind = 0; //% overwind, set underwind to 0
-int spin_dir = 1; // set to -1 for Counter Clockwise, and 1 for Clockwise.
+int spin_dir = -1; // set to -1 for Counter Clockwise, and 1 for Clockwise.
 float faceplateOffset =0; // distance off of the faceplate to the inside of the bobbin, good for thicker flatwork.
-float error_margin = 8; // Percent of bobbin width to remove for accident prevention.
+float error_margin = 5; // Percent of bobbin width to remove for accident prevention.
 
 //-------------------------- Bobbin Parameters-----------------------
 
 
-float bobbin_width = 6; //Width in Millimeters gap between two faces for winds.
+float bobbin_width = 11; //Width in Millimeters gap between two faces for winds.
 float bobbin_length = 57; // Length of bobbin in mm. just for estimating wire usage.
 float bobbin_height = 5; // Width across bobbin in mm. just for esitmating wire usage,
 
